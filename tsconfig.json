@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "src/SRC-trackExpense/main.tsx"],
+  "include": ["src", "src/SRC-trackExpense/main.tsx", "main.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

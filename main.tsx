@@ -3,7 +3,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ChakraProvider } from '@chakra-ui/react';
-import AppGame from './GAME-SRC/AppGame';
+import AppGame from './src/GAME-SRC/AppGame';
 
 // import AppTrack from './SRC-trackExpense/AppTrack';
 

@@ -1,25 +1,34 @@
 /** @format */
 
-import { Button, Stack } from '@chakra-ui/react';
+import { Grid, GridItem, Show } from '@chakra-ui/react';
 
 const AppGame = () => {
 	return (
-		<>
-			{/* <h1>app fame</h1> */}
-			<div className='container '>
-				<Stack
-					spacing={4}
-					direction='row'
-					align='center'
-					p='10'>
-					<Button
-						colorScheme='pink'
-						size='lg'>
-						Button
-					</Button>
-				</Stack>
-			</div>
-		</>
+		<Grid
+			templateAreas={{
+				base: `' nav' 'main'`,
+				lg: `'nav nav' 'aside main'`,
+			}}>
+			<GridItem
+				area='nav'
+				bg='pink'>
+				{' '}
+				NAv
+			</GridItem>
+			<Show above='lg'>
+				<GridItem
+					area='aside'
+					bg='gold'>
+					{' '}
+					aside
+				</GridItem>
+			</Show>
+			<GridItem
+				area='main'
+				bg='black'>
+				main{' '}
+			</GridItem>
+		</Grid>
 	);
 };
 
