@@ -6,6 +6,7 @@ import NavBar from './components/navBar';
 const AppGame = () => {
 	return (
 		<Grid
+			padding={'15px'}
 			templateAreas={{
 				base: `' nav' 'main'`,
 				lg: `'nav nav' 'aside main'`,
@@ -30,4 +31,5 @@ const AppGame = () => {
 };
 
 export default AppGame;
+
 
