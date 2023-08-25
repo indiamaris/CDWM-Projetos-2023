@@ -13,12 +13,8 @@ interface Props {
 
 
 const GameCard = ({ game }: Props) => {
-	const viewSettings = GameCardSizes();
 	return (
-		<Card
-			width={viewSettings.width}
-			borderRadius={viewSettings.borderRadius}
-			overflow={viewSettings.overflow}>
+		<Card>
 			<Image src={getCroppedImageUrl(game.background_image)} />
 
 			<CardBody>
