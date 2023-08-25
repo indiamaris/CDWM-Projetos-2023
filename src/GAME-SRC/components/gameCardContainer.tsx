@@ -4,8 +4,9 @@ import { Box } from '@chakra-ui/react';
 import GameCardSizes from './gameCardSizes';
 
 interface Props {
-	children: ReactNode;
+	children:ReactNode;
 }
+
 const GameCardContainer = ({children}:Props) => {
 	const viewSettings = GameCardSizes();
 
@@ -19,3 +20,4 @@ const GameCardContainer = ({children}:Props) => {
 };
 
 export default GameCardContainer;
+

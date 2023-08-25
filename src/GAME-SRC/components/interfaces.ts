@@ -22,3 +22,17 @@ export interface FetchGamesResponse {
 export interface Score{
 	score:number
 }
+
+export interface FetchGenresResponse {
+	count: number;
+	results: Genre[];
+}
+
+export interface Genre {
+	id: number;
+	name: string;
+	//   image_background: string;
+}
+
+
+

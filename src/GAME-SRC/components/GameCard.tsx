@@ -6,7 +6,6 @@ import { Game } from './interfaces';
 import PlatformIconList from './platformIconList';
 import CriticScore from './criticalScore';
 import getCroppedImageUrl from '../service/image-url';
-import GameCardSizes from './gameCardSizes';
 interface Props {
 	game: Game;
 }
