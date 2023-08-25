@@ -1,7 +1,7 @@
 /** @format */
 const sizes = {
-	width: '300px',
-	borderRadius: '15px',
+	width: '100%',
+	borderRadius: '10px',
 	overflow: 'hidden',
 };
 

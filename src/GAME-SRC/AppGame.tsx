@@ -9,25 +9,28 @@ import NavBar from './components/navBar';
 const AppGame = () => {
 	return (
 		<Grid
+			bg='black'
 			padding={'15px'}
 			templateAreas={{
 				base: `' nav' 'main'`,
 				lg: `'nav nav' 'aside main'`,
-			}}>
+			}}
+			templateColumns={
+				{
+					base: '200px',
+					lg: '150px,1fr'
+				}
+			}>
 			<GridItem area='nav'>
-				<NavBar/>
+				<NavBar />
 			</GridItem>
 			<Show above='lg'>
-				<GridItem
-					area='aside'
-					>
-					<Aside/>
+				<GridItem area='aside'>
+					<Aside />
 				</GridItem>
 			</Show>
-			<GridItem
-				area='main'
-				bg='black'>
-			<GameGrid />
+			<GridItem area='main'>
+				<GameGrid />
 			</GridItem>
 		</Grid>
 	);
