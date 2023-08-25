@@ -6,16 +6,19 @@ import { Game } from './interfaces';
 import PlatformIconList from './platformIconList';
 import CriticScore from './criticalScore';
 import getCroppedImageUrl from '../service/image-url';
-
+import GameCardSizes from './gameCardSizes';
 interface Props {
 	game: Game;
 }
 
+
 const GameCard = ({ game }: Props) => {
+	const viewSettings = GameCardSizes();
 	return (
 		<Card
-			borderRadius='15px'
-			overflow='hidden'>
+			width={viewSettings.width}
+			borderRadius={viewSettings.borderRadius}
+			overflow={viewSettings.overflow}>
 			<Image src={getCroppedImageUrl(game.background_image)} />
 
 			<CardBody>
