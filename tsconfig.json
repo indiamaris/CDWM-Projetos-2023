@@ -21,5 +21,10 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src", "src/SRC-trackExpense/main.tsx", "main.tsx"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+
+  "exclude": [
+    "typings/browser.d.ts",
+    "typings/browser",
+    "node_modules"]
 }
