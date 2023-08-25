@@ -14,25 +14,19 @@ export interface Game {
 	metacritic: number;
 }
 
-export interface FetchGamesResponse {
+export interface FetchDataResponse<T> {
 	count: number;
-	results: Game[];
+	results: T[];
 }
 
-export interface Score{
-	score:number
-}
-
-export interface FetchGenresResponse {
-	count: number;
-	results: Genre[];
+export interface Score {
+	score: number;
 }
 
 export interface Genre {
 	id: number;
 	name: string;
+	image_background: string;
 	//   image_background: string;
 }
-
-
 
