@@ -1,9 +1,12 @@
 /** @format */
 
-import { Game } from '../components/interfaces';
+import { Game, Genre } from '../components/interfaces';
 import useData from './useData';
 
-const useGames = () => useData<Game>('/games');
+const useGames = (selectedGenre: Genre | null) =>
+	useData<Game>('/games', { params: { genres: selectedGenre?.id } }, [
+		selectedGenre?.id,
+	]);
 
 export default useGames;
 
