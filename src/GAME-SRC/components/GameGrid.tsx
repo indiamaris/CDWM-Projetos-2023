@@ -12,7 +12,10 @@ interface Props {
 const GameGrid = ({selectedGenre}:Props) => {
 	
 	const { data: games, error, isLoading } = useGames(selectedGenre);
-	const skeletons = [1, 2, 3, 4, 5, 6];
+// I do need to think in a new aproach here 
+	const skeletons = [ 1, 2, 3, 4, 5, 6, 7,
+		8, 9, 10, 11, 12, 13, 14, 15
+	];
 
 	return (
 		<>

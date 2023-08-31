@@ -1,5 +1,5 @@
 /** @format */
-import ReactNode from 'react'
+import {ReactNode} from 'react'
 import { Box } from '@chakra-ui/react';
 import GameCardSizes from './gameCardSizes';
 

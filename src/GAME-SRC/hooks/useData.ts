@@ -33,8 +33,10 @@ const useData = <T>(
 				});
 			return () => controller.abort();
 		},
+		// we cannot spread a unk :D
 		deps ? [...deps] : []
 	);
+	//  the correct way to make it is that, but because it is a objwe will have uncontrolled reloads at this stage in the projetct:  [endpoint, requestConfig]);
 
 	return { data, error, isLoading };
 };

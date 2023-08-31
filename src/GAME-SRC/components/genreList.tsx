@@ -7,9 +7,10 @@ import { Genre } from './interfaces';
 
 interface Props {
 	onSelectGenre: (genre: Genre) => void;
+	selectedGenre: Genre | null;
 }
 
-const GenreList = ({ onSelectGenre }: Props) => {
+const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
 	const { data: genres, isLoading, error } = useGenres();
 	return error ? null : isLoading ? (
 		<Spinner />
@@ -27,7 +28,22 @@ const GenreList = ({ onSelectGenre }: Props) => {
 						<Button
 							onClick={() => onSelectGenre(genre)}
 							fontSize='lg'
-							variant='link'>
+							variant='link'
+							fontWeight={
+								genre.id === selectedGenre?.id
+									? 'bold'
+									: 'normal'
+							}
+							colorScheme={
+								genre.id === selectedGenre?.id ? 'yellow' : ''
+							}
+
+							// {
+							// 	...(genre.id === selectedGenre?.id
+							// 	? {fontWeight:'bold' }
+							// 	: {fontWeight :'normal'})
+							// }
+						>
 							<Text>{genre.name}</Text>
 						</Button>
 					</HStack>
@@ -35,13 +51,7 @@ const GenreList = ({ onSelectGenre }: Props) => {
 			))}
 		</List>
 	);
-	
 };
 
 export default GenreList;
-
-
-
-
-
 

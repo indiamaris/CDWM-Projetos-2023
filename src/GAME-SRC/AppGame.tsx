@@ -29,8 +29,9 @@ const AppGame = () => {
 			<Show above='lg'>
 				<GridItem area='aside'>
 					<GenreList
-						onSelectGenre={ (genre)=> {
-							setSelectedGenre(genre)
+						selectedGenre={selectedGenre}
+						onSelectGenre={(genre) => {
+							setSelectedGenre(genre);
 						}}
 					/>
 				</GridItem>
@@ -43,4 +44,6 @@ const AppGame = () => {
 };
 
 export default AppGame;
+
+
 
