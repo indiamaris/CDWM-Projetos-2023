@@ -11,8 +11,6 @@ import CriticStar from './criticalStar';
 interface Props {
 	game: Game;
 }
-
-
 const GameCard = ({ game }: Props) => {
 	return (
 		<Card>

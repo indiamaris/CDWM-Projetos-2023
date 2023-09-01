@@ -1,7 +1,6 @@
-
+// THATS A PROVISORI APROACH FOR VISUAL TESTING
 import { Score } from './interfaces';
-
-const scoreStar = ({ score }: Score) =>
+const scoreStarConvertion = ({ score }: Score) =>
 	score == 0
 		? []
 		: score > 90
@@ -14,5 +13,6 @@ const scoreStar = ({ score }: Score) =>
 		? ['*', '*']
 		: ['*'];
 
-export default scoreStar;
+export default scoreStarConvertion;
+
 

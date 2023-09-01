@@ -2,7 +2,6 @@
 
 import { HStack, Icon, Stack, Text } from '@chakra-ui/react';
 import ColorModeSwitch from './colorModeSwitch';
-// import logo from '../assets/Logo/logo.webp'
 import SearchInput from './searchInput/searchInput';
 import { SearchInputI } from './interfaces';
 import { TbDeviceGamepad2 } from 'react-icons/tb';
@@ -55,7 +54,7 @@ const NavBar = ({ onSearch }: SearchInputI) => (
 
 			<HStack
 				width={'20%'}
-				// backgroundColor={'blue'}
+			
 			>
 				<ColorModeSwitch />
 			</HStack>
