@@ -1,5 +1,5 @@
 /** @format */
-
+// here I change a little bit the base colors in the theme 
 import { extendTheme, ThemeConfig } from '@chakra-ui/react';
 
 const config: ThemeConfig = {

@@ -1,5 +1,5 @@
 /** @format */
-
+// I decided to let them alml here because it is a small app and not a official one that requires arch discussions
 export interface Platform {
 	id: number;
 	name: string;
