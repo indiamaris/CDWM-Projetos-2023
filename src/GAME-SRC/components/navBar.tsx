@@ -11,40 +11,46 @@ const NavBar = ({ onSearch }: SearchInputI) => (
 	<HStack margin={'10px'}>
 		<HStack>
 			<HStack>
-				<HStack
-					border={'solid'}
-					borderRadius={'10px'}>
-					<Icon
-						padding={'2px'}
-						as={TbDeviceGamepad2}
-						boxSize={'65px'}
-					/>
-				</HStack>
-				<Stack mr={'40px'}>
-					<Text
-						lineHeight={'22px'}
-						fontSize={'55px'}
-						fontWeight={'bold'}>
-						INDIA
-					</Text>{' '}
-					<Text
-						textAlign={'right'}
-						lineHeight={'10px'}
-						fontSize={'25px'}>
-						games
-					</Text>
+				<Stack mr={'100px'}>
+					<HStack>
+						<Stack>
+							<Icon
+								as={TbDeviceGamepad2}
+								boxSize={'20px'}
+							/>
+							<Icon
+								as={TbDeviceGamepad2}
+								boxSize={'20px'}
+							/>
+						</Stack>
+						<Stack>
+							<Text
+								lineHeight={'0'}
+								fontSize={'55px'}
+								fontWeight={'normal'}>
+								INDIA{''}
+							</Text>
+						</Stack>
+					</HStack>
+
+					<Stack>
+						<Text
+							textAlign={'right'}
+							lineHeight={'0'}
+							fontSize={'25px'}
+							color={'#f95283'}
+							fontWeight={'light'}>
+							games
+						</Text>
+					</Stack>
 				</Stack>
 			</HStack>
 		</HStack>
 		<HStack
 			width={'100%'}
-			// backgroundColor={'yellow'}
 			justifyContent={'space-around'}>
-			<HStack
-				width={'100%'}
-				// backgroundColor={'pink'}
-			>
-				<SearchInput  onSearch={onSearch} />{' '}
+			<HStack width={'100%'}>
+				<SearchInput onSearch={onSearch} />{' '}
 			</HStack>
 
 			<HStack

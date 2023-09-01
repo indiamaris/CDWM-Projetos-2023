@@ -6,6 +6,8 @@ import { Game } from './interfaces';
 import PlatformIconList from './platformIconList';
 import CriticScore from './criticalScore';
 import getCroppedImageUrl from '../service/image-url';
+import CriticStar from './criticalStar';
+
 interface Props {
 	game: Game;
 }
@@ -20,16 +22,37 @@ const GameCard = ({ game }: Props) => {
 					<PlatformIconList
 						platforms={game.parent_platforms.map((p) => p.platform)}
 					/>
-
 					<CriticScore score={game.metacritic} />
 				</HStack>
-				<Heading fontWeight={'normal'} fontSize={'xl'} mt={1}>{game.name}</Heading>
+
+				<HStack>
+					<HStack>
+						<Heading
+							fontWeight={'normal'}
+							fontSize={'xl'}
+							mt={1}>
+							{game.name}
+						</Heading>
+					</HStack>
+				</HStack>
+				<CriticStar score={game.metacritic} />
 			</CardBody>
 		</Card>
 	);
 };
 
 export default GameCard;
+
+
+
+
+
+
+
+
+
+
+
 
 
 

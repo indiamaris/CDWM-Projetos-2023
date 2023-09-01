@@ -1,7 +1,3 @@
-/** @format */
-// interface Props {
-// 	score: number;
-// }
 
 import { Score } from './interfaces';
 
