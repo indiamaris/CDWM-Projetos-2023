@@ -2,6 +2,8 @@
 # INDIA games 2023
 # React18 + TypeScript + Vite + Chakra UI +a bunch of cute React Icons
 
+<img width="1414" alt="visualApp" src="https://github.com/indiamaris/IndiaGames-2023/assets/90830057/abf55a21-307a-4870-986c-36a62d1ec430">
+
 ## My Highest Skill Developed in this project:
 # INDIA games 2023
 
@@ -41,6 +43,7 @@ In general, IndiaGames is a video game discovery web app that helps you find new
 ## Getting Started
 
 To get started with GameHub, follow these steps:
+
 
 1. Clone this repository to your local machine.
 2. Run `npm install` to install the required dependencies.
