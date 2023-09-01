@@ -12,7 +12,7 @@
 
 ## My Highest Skill Developed in this project:
 
--- to check versions and change settings according to current documentation.
+-- To check versions and change settings according to current documentation.
 
 ## MY Developed Skills
 
