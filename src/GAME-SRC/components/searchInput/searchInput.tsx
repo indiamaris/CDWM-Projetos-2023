@@ -1,9 +1,9 @@
-import { Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
-import { useRef } from "react";
-import { BsSearch } from "react-icons/bs";
-import { SearchInputI } from "../interfaces";
+/** @format */
 
-
+import { Input, InputGroup, InputLeftElement } from '@chakra-ui/react';
+import { useRef } from 'react';
+import { BsSearch } from 'react-icons/bs';
+import { SearchInputI } from '../interfaces';
 
 const SearchInput = ({ onSearch }: SearchInputI) => {
 	const ref = useRef<HTMLInputElement>(null);
@@ -19,14 +19,14 @@ const SearchInput = ({ onSearch }: SearchInputI) => {
 				<Input
 					ref={ref}
 					borderRadius={20}
-					width={'1100px'}
 					placeholder='Search games...'
 					variant='filled'
+					width={'800px'}
 				/>
 			</InputGroup>
 		</form>
 	);
 };
 
-
 export default SearchInput;
+

@@ -1,6 +1,7 @@
 /** @format */
 
 import { Box, Grid, Flex, GridItem, Show } from '@chakra-ui/react';
+import './AppGame.css'
 import { useState } from 'react';
 import { GameQuery } from './components/interfaces';
 import GameGrid from './components/gameGrid';
@@ -9,7 +10,7 @@ import NavBar from './components/navBar';
 import GenreList from './components/genreList';
 import PlatformSelector from './components/plataformSelector';
 import SortSelector from './components/sortSelector';
-import { SearchInputI } from './components/interfaces';
+import GameHeading from './components/gameHeading';
 const AppGame = () => {
 	const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
 
@@ -24,11 +25,19 @@ const AppGame = () => {
 				lg: '250px 1fr',
 			}}
 			margin={5}>
-			<GridItem area='nav'>
-				<NavBar onSearch = {(searchText )=> setGameQuery({...gameQuery, searchText})}/>
+			<GridItem
+				area='nav'
+				width={'100%'}>
+				<NavBar
+					onSearch={(searchText) =>
+						setGameQuery({ ...gameQuery, searchText })
+					}
+				/>
 			</GridItem>
 			<Show above='lg'>
-				<GridItem area='aside'>
+				<GridItem
+					area='aside'
+					mt={'50px'}>
 					<GenreList
 						selectedGenre={gameQuery.genre}
 						onSelectGenre={(genre) => {
@@ -38,6 +47,7 @@ const AppGame = () => {
 				</GridItem>
 			</Show>
 			<GridItem area='main'>
+				<GameHeading gameQuery={gameQuery} />
 				<Flex
 					marginBottom={5}
 					marginLeft={5}>
@@ -64,5 +74,8 @@ const AppGame = () => {
 };
 
 export default AppGame;
+
+
+
 
 
