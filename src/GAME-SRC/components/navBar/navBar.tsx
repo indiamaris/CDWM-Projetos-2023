@@ -2,8 +2,8 @@
 
 import { HStack, Icon, Stack, Text } from '@chakra-ui/react';
 import ColorModeSwitch from './colorModeSwitch';
-import SearchInput from './searchInput/searchInput';
-import { SearchInputI } from './interfaces';
+import SearchInput from './searchInput';
+import { SearchInputI } from '../../interfaces/interfaces';
 import { TbDeviceGamepad2 } from 'react-icons/tb';
 
 const NavBar = ({ onSearch }: SearchInputI) => (
@@ -52,10 +52,7 @@ const NavBar = ({ onSearch }: SearchInputI) => (
 				<SearchInput onSearch={onSearch} />{' '}
 			</HStack>
 
-			<HStack
-				width={'20%'}
-			
-			>
+			<HStack width={'20%'}>
 				<ColorModeSwitch />
 			</HStack>
 		</HStack>

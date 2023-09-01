@@ -3,7 +3,7 @@
 import { Input, InputGroup, InputLeftElement } from '@chakra-ui/react';
 import { useRef } from 'react';
 import { BsSearch } from 'react-icons/bs';
-import { SearchInputI } from '../interfaces';
+import { SearchInputI } from '../../interfaces/interfaces';
 
 const SearchInput = ({ onSearch }: SearchInputI) => {
 	const ref = useRef<HTMLInputElement>(null);

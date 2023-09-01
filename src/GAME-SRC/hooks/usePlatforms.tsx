@@ -1,6 +1,6 @@
 /** @format */
 
-import { Platform } from '../components/interfaces';
+import { Platform } from '../interfaces/interfaces';
 import useData from './useData';
 
 const usePlatform = () => {

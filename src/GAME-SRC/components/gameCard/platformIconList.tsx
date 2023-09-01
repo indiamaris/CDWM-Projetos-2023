@@ -1,7 +1,7 @@
 /** @format */
 
 import { HStack, Icon } from '@chakra-ui/react';
-import { Platform } from './interfaces';
+import { Platform } from '../../interfaces/interfaces';
 import {
 	FaWindows,
 	FaPlaystation,

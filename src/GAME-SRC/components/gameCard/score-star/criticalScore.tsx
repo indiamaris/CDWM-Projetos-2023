@@ -1,13 +1,10 @@
 /** @format */
 
 import { Badge } from '@chakra-ui/react';
-import { Score } from './interfaces';
+import { Score } from '../../../interfaces/interfaces';
 import scoreColor from './scoreColor';
 
-
-
-
-const CriticScore = ( {score} : Score) => {
+const CriticScore = ({ score }: Score) => {
 	return (
 		<Badge
 			fontSize={'14px'}

@@ -1,6 +1,6 @@
 /** @format */
 
-import { Game, GameQuery } from '../components/interfaces';
+import { Game, GameQuery } from '../interfaces/interfaces';
 import useData from './useData';
 
 const useGames = (gameQuery: GameQuery) =>

@@ -1,16 +1,16 @@
 /** @format */
 
 import { Box, Grid, Flex, GridItem, Show } from '@chakra-ui/react';
-import './AppGame.css'
+import './AppGame.css';
 import { useState } from 'react';
-import { GameQuery } from './components/interfaces';
-import GameGrid from './components/gameGrid';
+import { GameQuery } from './interfaces/interfaces';
+import GameGrid from './components/main/gameGrid';
 // import Aside from './components/aside';
-import NavBar from './components/navBar';
-import GenreList from './components/genreList';
-import PlatformSelector from './components/plataformSelector';
-import SortSelector from './components/sortSelector';
-import GameHeading from './components/gameHeading';
+import NavBar from './components/navBar/navBar';
+import GenreList from './components/aside/genreList';
+import PlatformSelector from './components/heading/plataformSelector';
+import SortSelector from './components/heading/sortSelector';
+import GameHeading from './components/heading/gameHeading';
 const AppGame = () => {
 	const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
 
@@ -74,8 +74,4 @@ const AppGame = () => {
 };
 
 export default AppGame;
-
-
-
-
 

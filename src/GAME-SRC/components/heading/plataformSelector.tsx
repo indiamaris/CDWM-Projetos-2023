@@ -1,9 +1,9 @@
 /** @format */
 
 import { BsChevronDown } from 'react-icons/bs';
-import { Platform } from './interfaces';
+import { Platform } from '../../interfaces/interfaces';
 import { Menu, Button, MenuButton, MenuList, MenuItem } from '@chakra-ui/react';
-import usePlatform from '../hooks/usePlatforms';
+import usePlatform from '../../hooks/usePlatforms';
 interface Props {
 	onSelectPlatform: (platform: Platform) => void;
 	selectedPlatform: Platform | null;
@@ -33,5 +33,4 @@ const PlatformSelector = ({ selectedPlatform, onSelectPlatform }: Props) => {
 };
 
 export default PlatformSelector;
-
 

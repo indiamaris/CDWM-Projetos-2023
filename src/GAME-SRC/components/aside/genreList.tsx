@@ -1,9 +1,17 @@
 /** @format */
-import { HStack, Heading, Image, List, ListItem, Spinner, Text } from '@chakra-ui/react';
-import useGenres from '../hooks/useGenres';
-import getCroppedImageUrl from '../service/image-url';
+import {
+	HStack,
+	Heading,
+	Image,
+	List,
+	ListItem,
+	Spinner,
+	Text,
+} from '@chakra-ui/react';
+import useGenres from '../../hooks/useGenres';
+import getCroppedImageUrl from '../../service/image-url';
 import { Button } from '@chakra-ui/react';
-import { Genre } from './interfaces';
+import { Genre } from '../../interfaces/interfaces';
 
 interface Props {
 	onSelectGenre: (genre: Genre) => void;
@@ -16,7 +24,12 @@ const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
 		<Spinner />
 	) : (
 		<>
-			<Heading fontSize={'3xl'} mb={25}> Genres</Heading>
+			<Heading
+				fontSize={'3xl'}
+				mb={25}>
+				{' '}
+				Genres
+			</Heading>
 			<List>
 				{genres.map((genre) => (
 					<ListItem key={genre.id}>
@@ -55,5 +68,4 @@ const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
 };
 
 export default GenreList;
-
 

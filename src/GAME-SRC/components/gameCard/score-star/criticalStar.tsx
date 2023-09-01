@@ -1,7 +1,7 @@
 /** @format */
 
 import { Box, HStack, Icon } from '@chakra-ui/react';
-import { Score } from './interfaces';
+import { Score } from '../../../interfaces/interfaces';
 
 import { AiFillStar } from 'react-icons/ai';
 import scoreStar from './scoreStar';
@@ -12,12 +12,9 @@ const CriticStar = ({ score }: Score) => {
 	return (
 		<HStack
 			maxInlineSize={'110px'}
-			color={'gold'}
-		>
+			color={'gold'}>
 			{starScore.map(() => (
-				<Box
-					boxSize={'13px'}
-				>
+				<Box boxSize={'13px'}>
 					<Icon as={AiFillStar}></Icon>
 				</Box>
 			))}

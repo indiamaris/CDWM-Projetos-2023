@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import apiClient from '../service/api-client';
 import { AxiosRequestConfig, CanceledError } from 'axios';
-import { FetchDataResponse } from '../components/interfaces';
+import { FetchDataResponse } from '../interfaces/interfaces';
 
 const useData = <T>(
 	endpoint: string,

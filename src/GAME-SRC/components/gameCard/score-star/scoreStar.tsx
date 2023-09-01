@@ -1,5 +1,7 @@
+/** @format */
+
 // THATS A PROVISORI APROACH FOR VISUAL TESTING
-import { Score } from './interfaces';
+import { Score } from '../../../interfaces/interfaces';
 const scoreStarConvertion = ({ score }: Score) =>
 	score == 0
 		? []
@@ -14,5 +16,4 @@ const scoreStarConvertion = ({ score }: Score) =>
 		: ['*'];
 
 export default scoreStarConvertion;
-
 
