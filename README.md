@@ -1,17 +1,17 @@
 <!-- @format -->
 
-# React + TypeScript + Vite + Chakra UI and a bunch of cute React Icons
+# React18 + TypeScript + Vite + Chakra UI +a bunch of cute React Icons
 
 ## Highest Skill Developed in this project:
 
 ----check versions and change settings according to current documentation.
 
-# GameHub
+# INDIA games 2023
 
-This is the project I build in Ultimate React course but its not exactly the same as the mentor did, I made my changes, make diferent choices for icons, I inserted stars and I let my creativity flow.
-After that projetic I fell having better and solid understanding of React and I feel fully able to build real-world applications with React and TypeScript.
+This is the project I built in Ultimate React18 course but it's not exactly the same as the mentor did, I made my changes, I made different choices for icons, I inserted stars and I let my creativity flow.
+After that project I fell having better and solid understanding of React and I am fully able to build real-world applications with React and TypeScript.
 
-In general, GameHub is a video game discovery web app that helps you find new and interesting games to play. With GameHub, you can search for games by platform, genre, and more.
+In general, IndiaGames is a video game discovery web app that helps you find new and exciting games to play. With IndiaGames, you can search for games by platform, genre, and more.
 
 ## MY Developed Skills
 
@@ -47,7 +47,7 @@ Currently, two official plugins are available:
 
 ## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
 -   Configure the top-level `parserOptions` property like this:
 
