@@ -1,17 +1,10 @@
 <!-- @format -->
-
+# INDIA games 2023
 # React18 + TypeScript + Vite + Chakra UI +a bunch of cute React Icons
 
-## Highest Skill Developed in this project:
+## My Highest Skill Developed in this project:
 
-----check versions and change settings according to current documentation.
-
-# INDIA games 2023
-
-This is the project I built in Ultimate React18 course but it's not exactly the same as the mentor did, I made my changes, I made different choices for icons, I inserted stars and I let my creativity flow.
-After that project I fell having better and solid understanding of React and I am fully able to build real-world applications with React and TypeScript.
-
-In general, IndiaGames is a video game discovery web app that helps you find new and exciting games to play. With IndiaGames, you can search for games by platform, genre, and more.
+-- to check versions and change settings according to current documentation.
 
 ## MY Developed Skills
 
@@ -27,6 +20,17 @@ In general, IndiaGames is a video game discovery web app that helps you find new
 -   Write clean code like a pro
 -   Apply best practices
 -   Check versions and change settings according to current documentation.
+
+
+
+# INDIA games 2023
+
+This is the project I built in Ultimate React18 course but it's not exactly the same as the mentor did, I made my changes, I made different choices for icons, I inserted stars and I let my creativity flow.
+After that project I fell having better and solid understanding of React and I am fully able to build real-world applications with React and TypeScript.
+
+In general, IndiaGames is a video game discovery web app that helps you find new and exciting games to play. With IndiaGames, you can search for games by platform, genre, and more.
+
+
 
 ## Getting Started
 
