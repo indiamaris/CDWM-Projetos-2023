@@ -3,6 +3,12 @@
 # React18 + TypeScript + Vite + Chakra UI +a bunch of cute React Icons
 
 ## My Highest Skill Developed in this project:
+# INDIA games 2023
+
+-- to check versions and change settings according to current documentation.
+# React18 + TypeScript + Vite + Chakra UI +a bunch of cute React Icons
+
+## My Highest Skill Developed in this project:
 
 -- to check versions and change settings according to current documentation.
 
