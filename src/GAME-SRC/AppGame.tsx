@@ -5,7 +5,6 @@ import './AppGame.css';
 import { useState } from 'react';
 import { GameQuery } from './interfaces/interfaces';
 import GameGrid from './components/main/gameGrid';
-// import Aside from './components/aside';
 import NavBar from './components/navBar/navBar';
 import GenreList from './components/aside/genreList';
 import PlatformSelector from './components/heading/plataformSelector';
