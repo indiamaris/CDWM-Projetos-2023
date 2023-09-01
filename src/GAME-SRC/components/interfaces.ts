@@ -37,4 +37,7 @@ export interface GameQuery {
 	searchText: string;
 }
 
+export interface SearchInputI {
+	onSearch: (searchText: string) => void;
+}
 

@@ -9,7 +9,7 @@ import NavBar from './components/navBar';
 import GenreList from './components/genreList';
 import PlatformSelector from './components/plataformSelector';
 import SortSelector from './components/sortSelector';
-import { HStack } from '@chakra-ui/react';
+import { SearchInputI } from './components/interfaces';
 const AppGame = () => {
 	const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
 
@@ -22,9 +22,10 @@ const AppGame = () => {
 			templateColumns={{
 				base: '1fr',
 				lg: '250px 1fr',
-			}}>
+			}}
+			margin={5}>
 			<GridItem area='nav'>
-				<NavBar />
+				<NavBar onSearch = {(searchText )=> setGameQuery({...gameQuery, searchText})}/>
 			</GridItem>
 			<Show above='lg'>
 				<GridItem area='aside'>
@@ -63,4 +64,5 @@ const AppGame = () => {
 };
 
 export default AppGame;
+
 
