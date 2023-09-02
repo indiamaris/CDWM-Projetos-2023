@@ -42,7 +42,7 @@ In general, IndiaGames is a video game discovery web app that helps you find new
 
 ## Getting Started
 
-To get started with GameHub, follow these steps:
+To get started with INDIA games, follow these steps:
 
 
 1. Clone this repository to your local machine.
