@@ -15,7 +15,7 @@ export interface Game {
 }
 
 export interface FetchDataResponse<T> {
-	count: number;
+	count?: number;
 	results: T[];
 }
 
@@ -27,7 +27,6 @@ export interface Genre {
 	id: number;
 	name: string;
 	image_background: string;
-	//   image_background: string;
 }
 
 export interface GameQuery {
