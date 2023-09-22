@@ -25,6 +25,7 @@
     "react-hook-form": "^7.45.4",
     "react-icons": "^4.10.1",
     "react-md": "^5.1.5",
+    "react-rating": "^2.0.5",
     "zod": "^3.22.2"
   },
   "devDependencies": {

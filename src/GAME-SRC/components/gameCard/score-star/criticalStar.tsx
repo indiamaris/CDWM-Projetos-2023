@@ -1,23 +1,25 @@
 /** @format */
 
-import { Box, HStack, Icon } from '@chakra-ui/react';
+import { HStack, Icon } from '@chakra-ui/react';
 import { Score } from '../../../interfaces/interfaces';
-
-import { AiFillStar } from 'react-icons/ai';
-import scoreStar from './scoreStar';
+import Rating from 'react-rating';
+import { FaRegStar, FaStar } from 'react-icons/fa';
 
 const CriticStar = ({ score }: Score) => {
-	const starScore = scoreStar({ score });
+	const starScore = score / 10 / 2;
 
 	return (
 		<HStack
 			maxInlineSize={'110px'}
 			color={'gold'}>
-			{starScore.map(() => (
-				<Box boxSize={'13px'}>
-					<Icon as={AiFillStar}></Icon>
-				</Box>
-			))}
+			{/* @ts-expect-error Server Component */}
+
+			<Rating
+				emptySymbol={<Icon as={FaRegStar} />}
+				fullSymbol={<Icon as={FaStar} />}
+				initialRating={starScore}
+				readonly
+			/>
 		</HStack>
 	);
 };
