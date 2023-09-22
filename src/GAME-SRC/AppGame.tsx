@@ -4,7 +4,7 @@ import { Box, Grid, Flex, GridItem, Show } from '@chakra-ui/react';
 import './AppGame.css';
 import { useState } from 'react';
 import { GameQuery } from './interfaces/interfaces';
-import GameGrid from './components/main/gameGrid';
+import GameGrid from './components/gameGrid/gameGrid';
 import NavBar from './components/navBar/navBar';
 import GenreList from './components/aside/genreList';
 import PlatformSelector from './components/heading/plataformSelector';
