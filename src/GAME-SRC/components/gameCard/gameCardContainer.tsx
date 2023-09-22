@@ -11,10 +11,11 @@ const GameCardContainer = ({ children }: Props) => {
 	const viewSettings = GameCardSizes();
 
 	return (
-		<Box
+		<Box 
 			width={viewSettings.width}
 			borderRadius={viewSettings.borderRadius}
-			overflow={viewSettings.overflow}>
+			overflow={viewSettings.overflow}
+		>
 			{children}
 		</Box>
 	);

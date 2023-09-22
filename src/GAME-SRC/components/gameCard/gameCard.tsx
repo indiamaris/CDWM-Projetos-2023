@@ -13,7 +13,7 @@ interface Props {
 }
 const GameCard = ({ game }: Props) => {
 	return (
-		<Card>
+		<Card m='1'>
 			<Image src={getCroppedImageUrl(game.background_image)} />
 			<CardBody>
 				<HStack justifyContent='space-between'>
@@ -40,4 +40,6 @@ const GameCard = ({ game }: Props) => {
 };
 
 export default GameCard;
+
+
 

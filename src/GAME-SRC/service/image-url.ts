@@ -1,6 +1,6 @@
 /** @format */
 // the api has this crop option but do not accept all values as Params, this is why the values are hardcoded :D
-import noImage from '../assets/ImagePlaceholder/no-image-placeholder-6f3882e0.webp';
+import noImage from '../assets/ImagePlaceholder/no-image-placeholder-black.png';
 const getCroppedImageUrl = (url: string) => {
 	if (!url) return noImage;
 	const target = 'media/';
